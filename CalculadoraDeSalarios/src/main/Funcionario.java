@@ -42,10 +42,10 @@ public class Funcionario {
                 }
                 break;
             case "GERENTE":
-                if(this.salarioBase >= 2000.0){
-                    fatorDeDesconto = 0.25;
+                if(this.salarioBase >= 5000.0){
+                    fatorDeDesconto = 0.30;
                 }else{
-                    fatorDeDesconto = 0.15;
+                    fatorDeDesconto = 0.20;
                 }
                 break;
 
