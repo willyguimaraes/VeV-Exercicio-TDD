@@ -60,7 +60,11 @@ public class Funcionario {
     //calcula o valor liquido do salario do funcionario
     public double calcularLiquido(double fatorDeDesconto){
        double valorDescontado = this.salarioBase * fatorDeDesconto;
-        return this.salarioBase - valorDescontado; //valor liquido
+        return Math.ceil(this.salarioBase - valorDescontado); //valor liquido
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
     }
 
     
