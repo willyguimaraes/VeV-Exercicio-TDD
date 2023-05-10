@@ -2,9 +2,9 @@ package main;
 
 public class GeradorNotaFiscal {
 
-    private NotaFiscalDao dao;
-    private SAP sap;
-    private Smtp smtp;
+    private NotaFiscalDao dao = new NotaFiscalDao();
+    private SAP sap = new SAP();
+    private Smtp smtp = new Smtp();
     
     public NotaFiscal geradorNotaFiscal(Fatura fatura) {
 

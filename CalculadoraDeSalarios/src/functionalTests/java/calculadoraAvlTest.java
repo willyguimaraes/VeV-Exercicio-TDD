@@ -89,33 +89,29 @@ public class calculadoraAvlTest{
 
     @Test
     public void testCalculoSalarioGerente() {
-        Funcionario gerente1 = new Funcionario("gerente1 Pereira","gerente1Pereira@exemplo.com", 2900.0, "GERENTE");
-        double salarioEsperado1 = Math.ceil(gerente1.getSalarioBase() * 0.9); //salário x 0.9
+        Funcionario gerente1 = new Funcionario("gerente1 Pereira","gerente1Pereira@exemplo.com", 4900.0, "GERENTE");
+        double salarioEsperado1 = Math.ceil(gerente1.getSalarioBase() * 0.8); //salário x 0.8
         assertTrue(gerente1.calcularSalario() == salarioEsperado1);
 
-        Funcionario gerente2 = new Funcionario("gerente2 Pereira","gerente2Pereira@exemplo.com", 2998.0, "GERENTE");
-        double salarioEsperado2 = Math.ceil(gerente2.getSalarioBase() * 0.9); //salário x 0.9
+        Funcionario gerente2 = new Funcionario("gerente2 Pereira","gerente2Pereira@exemplo.com", 4998.0, "GERENTE");
+        double salarioEsperado2 = Math.ceil(gerente2.getSalarioBase() * 0.8); //salário x 0.8
         assertTrue(gerente2.calcularSalario() == salarioEsperado2);
 
-        Funcionario gerente3 = new Funcionario("gerente3 Pereira","gerente3Pereira@exemplo.com", 2999.0, "GERENTE");
-        double salarioEsperado3 = Math.ceil(gerente3.getSalarioBase() * 0.9); //salário x 0.9
+        Funcionario gerente3 = new Funcionario("gerente3 Pereira","gerente3Pereira@exemplo.com", 4999.0, "GERENTE");
+        double salarioEsperado3 = Math.ceil(gerente3.getSalarioBase() * 0.8); //salário x 0.8
         assertTrue(gerente3.calcularSalario() == salarioEsperado3);
 
-        Funcionario gerente4 = new Funcionario("gerente4 Pereira","gerente4Pereira@exemplo.com", 3000.0, "GERENTE");
-        double salarioEsperado4 = Math.ceil(gerente4.getSalarioBase() * 0.8); //salário x 0.8
+        Funcionario gerente4 = new Funcionario("gerente4 Pereira","gerente4Pereira@exemplo.com", 5000.0, "GERENTE");
+        double salarioEsperado4 = Math.ceil(gerente4.getSalarioBase() * 0.7); //salário x 0.7
         assertTrue(gerente4.calcularSalario() == salarioEsperado4);
 
-        Funcionario gerente5 = new Funcionario("gerente5 Pereira","gerente5Pereira@exemplo.com", 3001.0, "GERENTE");
-        double salarioEsperado5 = Math.ceil(gerente5.getSalarioBase() * 0.8); //salário x 0.8
+        Funcionario gerente5 = new Funcionario("gerente5 Pereira","gerente5Pereira@exemplo.com", 5001.0, "GERENTE");
+        double salarioEsperado5 = Math.ceil(gerente5.getSalarioBase() * 0.7); //salário x 0.7
         assertTrue(gerente5.calcularSalario() == salarioEsperado5);
 
-        Funcionario gerente6 = new Funcionario("gerente6 Pereira","gerente6Pereira@exemplo.com", 3333.0, "GERENTE");
-        double salarioEsperado6 = Math.ceil(gerente6.getSalarioBase() * 0.8); //salário x 0.8
+        Funcionario gerente6 = new Funcionario("gerente6 Pereira","gerente6Pereira@exemplo.com", 5333.0, "GERENTE");
+        double salarioEsperado6 = Math.ceil(gerente6.getSalarioBase() * 0.7); //salário x 0.7
         assertTrue(gerente6.calcularSalario() == salarioEsperado6);
     }
-
-
-
-
 
 }
